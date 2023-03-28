@@ -1,0 +1,93 @@
+/*For all*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(240, 237, 237);
+    color: white;
+}
+
+/*For main*/
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*For wrapper*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    height: 80%;
+    background-color: rgb(40, 170, 245);
+    border-radius: 5%;
+    outline: 2px solid white;
+}
+
+.wrapper input {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 26px;
+}
+
+.wrapper .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 75%;
+    width: 80%;
+}
+
+.wrapper .info .temp {
+    font-size: 64px;
+}
+
+.wrapper button {
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 26px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    transform: scale(1.05);
+}
+
+.wrapper .info .desc {
+    position: absolute;
+}
+
+.wrapper .info .wind {
+    top: 10px;
+    left: 0px;
+}
+
+.wrapper .info .wind-deg {
+    top: 10px;
+    left: 70px;
+}
+
+.wrapper .info .weather {
+    top: 10px;
+    right: 0px;
+}
+
+.wrapper .info .visibility {
+    top: 10px;
+    right: 70px;
+}
