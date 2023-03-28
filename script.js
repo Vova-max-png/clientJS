@@ -20,7 +20,6 @@ let visibility = document.querySelector(".visibility");
 button.addEventListener('click', () => {
     let p = document.querySelector('.temp');
     send_request(`https://api.openweathermap.org/data/2.5/weather?q=${String(input.value)}&appid=f3d635247f508c161d4332cdbb90121f`).then(data => {
-        console.log(data);
         p.textContent = String(Math.trunc(data.main.temp - 273,15) + '°');
         wind.textContent = String(data.wind.speed + 'km/h');
         wind_deg.textContent = String(data.wind.deg + '°');
