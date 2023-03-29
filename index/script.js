@@ -32,7 +32,7 @@ button.addEventListener('click', () => {
                 visibility.textContent = String("Middle");
                 break;
             case data.visibility >= 0:
-                visibility.textContent = String("Good");
+                visibility.textContent = String("Bad");
                 break;
         }
     }).catch(err => {
