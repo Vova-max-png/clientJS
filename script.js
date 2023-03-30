@@ -42,7 +42,9 @@ button.addEventListener('click', () => {
         }
     }).catch(err => {
         console.warn("City not found!");
-        p.textContent = 'City not found!';
+        middle.textContent = 'City not found!';
+        min.textContent = '';
+        max.textContent = '';
         wind.textContent = '';
         wind_deg.textContent = '';
         weather.textContent = '';
