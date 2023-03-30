@@ -22,6 +22,7 @@ button.addEventListener('click', () => {
     let min = document.querySelector('.min-temp');
     let max = document.querySelector('.max-temp');
     send_request(`https://api.openweathermap.org/data/2.5/weather?q=${String(input.value)}&appid=f3d635247f508c161d4332cdbb90121f`).then(data => {
+        console.log(data);
         middle.textContent = String(Math.trunc(data.main.temp - 273,15) + '°');
         min.textContent = String(Math.trunc(data.main.temp_min - 273,15) + '°');
         max.textContent = String(Math.trunc(data.main.temp_max - 273,15) + '°');
